@@ -1,6 +1,6 @@
 <template>
   <div class="select-div">
-    <h3 class="sub-heading">All Todos</h3>
+   <div> <h3 class="sub-heading">All Todos</h3></div>
     <div>
       Filter Todos:
       <select @change="filterTodos($event)">
@@ -29,15 +29,14 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 85%;
 }
 select {
-  margin-right: 10.5rem;
   margin-top: 2rem;
   padding: 6px;
   border: #914fe5 1px solid;
 }
 .sub-heading{
-  margin-left: 11rem;
-  margin-top: 2rem;
+  margin-left: 10rem;
 }
 </style>
